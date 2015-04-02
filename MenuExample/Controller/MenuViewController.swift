@@ -33,7 +33,7 @@ extension MenuViewController {
 
 extension MenuViewController: Menu {
     var menuItems: [UIView] {
-        return [tableView.tableHeaderView!] + tableView.visibleCells() as [UIView]
+        return [tableView.tableHeaderView!] + tableView.visibleCells() as! [UIView]
     }
 }
 
